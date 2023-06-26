@@ -18,6 +18,12 @@ print("Waiting for connection on RFCOMM channel", port)
 client_sock, client_info = server_sock.accept()
 print("Accepted connection from", client_info)
 
+'''
+The received string is in base64 format byte string 
+Using decodestring method it is decoded back to image
+If stop is encountered the while loop breaks
+'''
+
 while True:
 	stringImg = b""
 	c=0
