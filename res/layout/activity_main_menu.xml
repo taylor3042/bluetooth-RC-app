@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="226dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="24dp"
+        android:text="Help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update" />
+
+    <Button
+        android:id="@+id/remote"
+        android:layout_width="226dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="15dp"
+        android:text="Manual Control"
+        app:layout_constraintBottom_toTopOf="@+id/update"
+        app:layout_constraintEnd_toEndOf="@+id/update"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/update"
+        app:layout_constraintTop_toBottomOf="@+id/chatPage" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="226dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="10dp"
+        android:text="Updates"
+        app:layout_constraintBottom_toTopOf="@+id/help"
+        app:layout_constraintEnd_toEndOf="@+id/help"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/help"
+        app:layout_constraintTop_toBottomOf="@+id/remote" />
+
+    <Button
+        android:id="@+id/chatPage"
+        android:layout_width="226dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="10dp"
+        android:text="Chat Bot"
+        app:layout_constraintBottom_toTopOf="@+id/remote"
+        app:layout_constraintEnd_toEndOf="@+id/remote"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/remote"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="368dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="98dp"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/chatPage"
+        app:layout_constraintEnd_toEndOf="@+id/chatPage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/chatPage"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

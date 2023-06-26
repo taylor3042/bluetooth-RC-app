@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpPage">
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="246dp"
+        android:background="@drawable/circle"
+        android:text="Record Actions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="124dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/circle"
+        android:drawableLeft="@android:drawable/ic_media_ff"
+        android:text="Turn Right"
+        app:layout_constraintBottom_toTopOf="@+id/speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/record"
+        app:layout_constraintTop_toBottomOf="@+id/titleRemote" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="122dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/circle"
+        android:drawableRight="@android:drawable/ic_media_rew"
+        android:text="Turn Left"
+        app:cornerRadius="@null"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toTopOf="@+id/speed"
+        app:layout_constraintEnd_toStartOf="@+id/record"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleRemote" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="124dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="157dp"
+        android:background="@drawable/circle"
+        android:drawableTop="@android:drawable/arrow_down_float"
+        android:text="Back"
+        app:cornerRadius="@null"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="124dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/circle"
+        android:drawableBottom="@android:drawable/arrow_up_float"
+        android:text="Forward"
+        app:cornerRadius="@null"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toTopOf="@+id/record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="17dp"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/titleRemote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="111dp"
+        android:text="Remote Controller"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/back2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/speed"
+        android:layout_width="193dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <TextView
+        android:id="@+id/speedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="10dp"
+        android:text="Speed"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speed" />
+</androidx.constraintlayout.widget.ConstraintLayout>
